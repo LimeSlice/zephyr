@@ -7,12 +7,12 @@
 menu "SoC and Board Hooks"
 
 config SOC_RESET_HOOK
-	bool "Run early SoC reset hook"
-	help
-	  Run an early SoC reset hook.
+bool "Run early SoC reset hook"
+help
+  Run an early SoC reset hook.
 
-	  A custom hook soc_reset_hook() is executed at the beginning of the
-	  startup code (__start). soc_reset_hook() must be implemented by the SoC.
+  A custom hook soc_reset_hook() is executed at the beginning of the
+  startup code (__start). soc_reset_hook() must be implemented by the SoC.
 
 config SOC_PREP_HOOK
 	bool "Run early SoC preparation hook"
